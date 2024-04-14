@@ -1,0 +1,5 @@
+id,nombres,apellidos,direccion,correo,dni,edad,fecha_creacion,telefono
+1,Phebe,Langstaff,Suite 25,plangstaff0@pen.io,275-45-4890,79,Mon Dec 25 2023 00:00:00 GMT-0400 (hora estándar del Atlántico),450-707-2479
+2,Obadiah,Basilio,9th Floor,obasilio1@nifty.com,761-73-6131,28,Thu Feb 15 2024 00:00:00 GMT-0400 (hora estándar del Atlántico),931-776-5894
+3,Angel,Boichat,Apt 1188,aboichatj@joomla.org,838-21-1990,50,Sun Jul 09 2023 00:00:00 GMT-0400 (hora estándar del Atlántico),678-587-3327
+8,nombres,apellidos,direccion,correo,dni,0,Invalid Date,telefono
