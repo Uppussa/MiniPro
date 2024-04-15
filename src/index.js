@@ -95,7 +95,7 @@ const handleImportUsuarios = async (req, res) => {
 // Crear el servidor HTTP
 const server = http.createServer(async (req, res) => {
   const { url, method } = req
-
+  console.log(`Recibida solicitud: ${req.method} ${req.url}`)
   // Manejar la solicitud dependiendo del método y la URL
   switch (method) {
     case 'GET':
@@ -105,7 +105,7 @@ const server = http.createServer(async (req, res) => {
           break
         default:
           // Responder con un error 404 si la ruta no coincide
-          res.writeHead(500, { 'Content-Type': 'application/json' })
+          res.writeHead(404, { 'Content-Type': 'application/json' })
           res.end('Ruta no encontrada')
       }
       break
@@ -116,13 +116,13 @@ const server = http.createServer(async (req, res) => {
           break
         default:
           // Responder con un error 404 si la ruta no coincide
-          res.writeHead(500, { 'Content-Type': 'application/json' })
+          res.writeHead(404, { 'Content-Type': 'application/json' })
           res.end('Ruta no encontrada')
       }
       break
     default:
       // Responder con un error 405 si el método no es permitido
-      res.writeHead(500, { 'Content-Type': 'application/json' })
+      res.writeHead(405, { 'Content-Type': 'application/json' })
       res.end('Método no permitido')
   }
 })
